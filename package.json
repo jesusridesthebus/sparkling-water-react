@@ -31,9 +31,9 @@
   "devDependencies": {
     "ts-node": "^8.3.0",
     "typescript": "^3.5.2",
-    "webpack": "^4.35.2",
+    "webpack": "^4.29.6",
     "webpack-cli": "^3.3.5",
-    "webpack-dev-middleware": "^3.7.0",
-    "webpack-dev-server": "^3.7.2"
+    "webpack-dev-middleware": "^3.2.0",
+    "webpack-dev-server": "^3.2.1"
   }
 }
