@@ -1,11 +1,12 @@
 import React from 'react';
 import Sparkling from './Sparkling';
+import './SparklingList.css';
 
 var masterSparklingList = [
   {
     price: '$2.75',
     brand: 'Cascadia',
-    flavor: 'Mountain air',
+    flavor: 'Hood Air',
     description: 'The hills are alive with the taste of this amerrzing sparkling water!',
     imageUrl: <img src={require('./assets/mthood.jpg')} />
   },
@@ -26,7 +27,7 @@ var masterSparklingList = [
 ];
 
 function SparklingList(){
-
+  
   return (
     <div>
       <hr/>

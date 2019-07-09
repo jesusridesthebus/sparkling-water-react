@@ -6,7 +6,7 @@ function Sparkling(props){
     <div>
         <style global jsx>{`
           div {
-            background-color: yellow;
+            // background-color: yellow;
           }
         `}</style>
       <p><h3>{props.price} - {props.brand}</h3><em>{props.flavor}</em></p>
