@@ -11,6 +11,7 @@ function Sparkling(props){
         `}</style>
       <p><h3>{props.price} - {props.brand}</h3><em>{props.flavor}</em></p>
       <p>{props.description}</p>
+      <p>{props.imageUrl}</p>
       <hr/>
     </div>
   );
@@ -21,6 +22,7 @@ Sparkling.propTypes = {
   brand: PropTypes.string.isRequired,
   flavor: PropTypes.string,
   description: PropTypes.string,
+  imageUrl: PropTypes.string
 };
 
 export default Sparkling;
