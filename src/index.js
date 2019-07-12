@@ -7,10 +7,8 @@ import { HashRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <HashRouter>
-    <Component/>
+    <App />
   </HashRouter>,
-  document.getElementById('react-app-root'));
-
-render(App);
+  document.getElementById('root'));
 
 serviceWorker.unregister();
