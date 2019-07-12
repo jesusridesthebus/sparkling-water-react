@@ -1,8 +1,10 @@
 import React from 'react';
 import Sparkling from './Sparkling';
 import './SparklingList.css';
+import PropTypes from 'prop-types';
 
-var masterSparklingList = [
+
+let masterSparklingList = [
   {
     price: '$2.75',
     brand: 'Cascadia',
@@ -26,22 +28,31 @@ var masterSparklingList = [
   }
 ];
 
-function SparklingList(){
-  
+function SparklingList(props){
   return (
     <div>
       <hr/>
-      {masterSparklingList.map((sparkling, index) =>
-          <Sparkling 
+      {Object.keys(props.masterSparklingList).map(function(sparklingId) {
+        let sparkling = props.sparklingList[sparklingId];
+        return <Sparkling 
           price={sparkling.price}
           brand={sparkling.brand}
           flavor={sparkling.flavor}
           description={sparkling.description}
           imageUrl={sparkling.imageUrl}
-          key={index}/>
-      )}
+          currentRouterPath={props.currentRouterPath}
+          key={sparklingId}
+          onSparklingSelection={props.onSparklingSelection}
+          sparklingId={sparklingId}/>
+      })}
     </div>
   );
 }
+
+SparklingList.propTypes = {
+  sparklingList: PropTypes.object,
+  currentRouterPath: PropTypes.string,
+  onSparklingSelection: PropTypes.func
+};
 
 export default SparklingList;
