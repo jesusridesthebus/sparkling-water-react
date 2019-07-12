@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header(){
   return (
@@ -7,7 +7,7 @@ function Header(){
       <h1>Sparkling Water</h1>
       <p>Vegan, organic, gluten-free!</p>
       
-      {/* <Link to="/">Home</Link>  */}
+      <Link to="/">Home</Link> 
       {/* | <Link to="/newticket">Create Ticket</Link> */}
     </div>
   );
