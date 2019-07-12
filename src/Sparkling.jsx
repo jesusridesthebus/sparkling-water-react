@@ -9,9 +9,11 @@ function Sparkling(props){
             // background-color: yellow;
           }
         `}</style>
-      <p><h3>{props.price} - {props.brand}</h3><em>{props.flavor}</em></p>
-      <p>{props.description}</p>
-      <p>{props.imageUrl}</p>
+      <h3>{props.price} - {props.brand}</h3><em>{props.flavor}</em>
+      <br/>
+      {props.description}
+      <br/>
+      {props.imageUrl}
       <hr/>
     </div>
   );
