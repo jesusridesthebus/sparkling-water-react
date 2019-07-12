@@ -11,7 +11,7 @@ function App() {
       <Header/>
       <Switch>
         <Route exact path='/' component={SparklingList} />
-        <Route path='/newSparkling' component={NewSparklingForm} />
+        <Route path='/newsparkling' component={NewSparklingForm} />
       </Switch>
     </div>
   );
