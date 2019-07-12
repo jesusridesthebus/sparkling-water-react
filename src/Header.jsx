@@ -7,8 +7,7 @@ function Header(){
       <h1>Sparkling Water</h1>
       <p>Vegan, organic, gluten-free!</p>
       
-      <Link to="/">Home</Link> 
-      {/* | <Link to="/newticket">Create Ticket</Link> */}
+      <Link to="/">Home</Link> | <Link to="/newSparkling">Create New Sparkling Water</Link>
     </div>
   );
 }

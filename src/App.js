@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header';
 import SparklingList from './SparklingList';
 import { Switch, Route } from 'react-router-dom';
+import NewSparklingForm from './NewSparklingForm';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header/>
       <Switch>
         <Route exact path='/' component={SparklingList} />
+        <Route path='/newSparkling' component={NewSparklingForm} />
       </Switch>
     </div>
   );
