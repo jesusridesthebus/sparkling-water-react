@@ -23,7 +23,6 @@ export default class App extends React.Component {
     var newMasterSparklingList = Object.assign({}, this.state.masterSparklingList, {
       [newSparklingId]: newSparkling
     });
-    newMasterSparklingList[newSparklingId].formattedWaitTime = newMasterSparklingList[newSparklingId].timeOpen.fromNow(true);
     this.setState({masterSparklingList: newMasterSparklingList});
   }
 
@@ -38,6 +37,7 @@ export default class App extends React.Component {
           <Header/>
           <Switch>
             {/* <Route path='/sparklinglist' component={SparklingList} /> */}
+            <Route exact path='/' component={NewSparklingControl} />
             <Route exact path='/sparklinglist' render={()=><SparklingList sparklingList={this.state.masterSparklingList} />} />
             {/* <Route path='/newsparkling' component={NewSparklingForm} /> */}
             <Route path='/newsparkling' render={()=><NewSparklingForm onNewSparklingCreation={this.handleAddingNewSparklingToList} />} />

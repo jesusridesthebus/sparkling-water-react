@@ -4,12 +4,7 @@ import PropTypes from 'prop-types';
 function Sparkling(props){
   return (
     <div>
-        <style global jsx>{`
-          div {
-            // background-color: yellow;
-          }
-        `}</style>
-      <h3>{props.price} - {props.brand}</h3><em>{props.flavor}</em>
+      <h3>${props.price} - {props.brand}</h3><em>{props.flavor}</em>
       <br/>
       {props.description}
       <br/>
