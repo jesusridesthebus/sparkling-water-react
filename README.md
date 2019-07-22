@@ -20,12 +20,12 @@ This application will display lists of sparkling water, with options to add and 
   You will also see any lint errors in the console.
 
 ## Technologies used
-_React
-_Javascript
-_Node.js
-_Bootstrap
-_HTML
-_CSS
+* React
+* Javascript
+* Node.js
+* Bootstrap
+* HTML
+* CSS
 
 #### License
 *This software is licensed under the MIT license.*
