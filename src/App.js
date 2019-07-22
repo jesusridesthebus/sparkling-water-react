@@ -5,6 +5,7 @@ import SparklingList from './SparklingList';
 import { Switch, Route } from 'react-router-dom';
 // import NewSparklingForm from './NewSparklingForm';
 import NewSparklingControl from './NewSparklingControl';
+import { v4 } from 'uuid';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,9 +21,9 @@ class App extends React.Component {
   handleAddingNewSparklingToList(newSparkling){
     var newSparklingId = v4();
     var newMasterSparklingList = Object.assign({}, this.state.masterSparklingList, {
-      [newSparkling.id]: newSparkling
+      [newSparklingId]: newSparkling
     });
-    newMasterSparklingList[newSparkling.id].formattedWaitTime = newMasterSparklingList[newSparkling.id].timeOpen.fromNow(true);
+    newMasterSparklingList[newSparklingId].formattedWaitTime = newMasterSparklingList[newSparklingId].timeOpen.fromNow(true);
     this.setState({masterSparklingList: newMasterSparklingList});
   }
 

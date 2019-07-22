@@ -42,8 +42,9 @@ function SparklingList(props){
           imageUrl={sparkling.imageUrl}
           currentRouterPath={props.currentRouterPath}
           key={sparklingId}
+          sparklingId={sparklingId}
           onSparklingSelection={props.onSparklingSelection}
-          sparklingId={sparklingId}/>
+          />
       })}
     </div>
   );
