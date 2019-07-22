@@ -17,6 +17,19 @@ class App extends React.Component {
     this.handleChangingSelectedSparkling = this.handleChangingSelectedSparkling.bind(this);
   }
 
+  handleAddingNewSparklingToList(newSparkling){
+    var newSparklingId = v4();
+    var newMasterSparklingList = Object.assign({}, this.state.masterSparklingList, {
+      [newSparkling.id]: newSparkling
+    });
+    newMasterSparklingList[newSparkling.id].formattedWaitTime = newMasterSparklingList[newSparkling.id].timeOpen.fromNow(true);
+    this.setState({masterSparklingList: newMasterSparklingList});
+  }
+
+  handleChangingSelectedSparkling(sparklingId){
+    this.setState({selectedSparkling: sparklingId});
+  }
+
   render(){
     return (
       <div className="App">

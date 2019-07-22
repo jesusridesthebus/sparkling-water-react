@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './NewSparkling.css';
+import { v4 } from 'uuid';
 
 function NewSparklingForm(props){
   let _price = null;
@@ -11,7 +12,7 @@ function NewSparklingForm(props){
 
   function handleNewSparklingSub(event) {
     event.preventDefault();
-    props.onNewSparklingSub({price: _price.value, brand: _brand.value, flavor: _flavor.value, description: _description.value, imageUrl: _imageUrl.value});
+    props.onNewSparklingCreation({price: _price.value, brand: _brand.value, flavor: _flavor.value, description: _description.value, imageUrl: _imageUrl.value, id: v4()});
     _price.value = '';
     _brand.value = '';
     _flavor.value = '';
