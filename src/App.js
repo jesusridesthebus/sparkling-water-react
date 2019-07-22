@@ -5,7 +5,6 @@ import SparklingList from './Components/SparklingList';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import NewSparklingForm from './Components/NewSparklingForm';
 import NewSparklingControl from './Components/NewSparklingControl';
-import Home from './Components/Home';
 import { v4 } from 'uuid';
 
 export default class App extends React.Component {
@@ -38,11 +37,10 @@ export default class App extends React.Component {
         <HashRouter>
           <Header/>
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path='/sparklinglist' component={SparklingList} />
-            {/* <Route exact path='/' render={()=><SparklingList sparklingList={this.state.masterSparklingList} />} /> */}
-            <Route path='/newsparkling' component={NewSparklingForm} />
-            {/* <Route path='/newsparkling' render={()=><NewSparklingControl onNewSparklingCreation={this.handleAddingNewSparklingToList} />} /> */}
+            {/* <Route path='/sparklinglist' component={SparklingList} /> */}
+            <Route exact path='/sparklinglist' render={()=><SparklingList sparklingList={this.state.masterSparklingList} />} />
+            {/* <Route path='/newsparkling' component={NewSparklingForm} /> */}
+            <Route path='/newsparkling' render={()=><NewSparklingForm onNewSparklingCreation={this.handleAddingNewSparklingToList} />} />
           </Switch>
         </HashRouter>
       </div>
