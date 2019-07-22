@@ -6,27 +6,26 @@
 This application will display lists of sparkling water, with options to add and edit sparkling waters.
 
 ## Specifications
-![Component Structure](src\assets\sparkling-component-structure.jpg)
+![Component Structure](./src/assets/sparkling-component-structure.jpg)
 
 ## Setup/Installation
 
-In the project directory, you can run:
+* Clone repository
+* In the project directory, you can run:
+#### `npm start`
+  Runs the app in the development mode.<br>
 
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+* Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  The page will reload if you make edits.<br>
+  You will also see any lint errors in the console.
 
 ## Technologies used
-React
-Javascript
-Node.js
-Bootstrap
-HTML
-CSS
+_React
+_Javascript
+_Node.js
+_Bootstrap
+_HTML
+_CSS
 
 #### License
 *This software is licensed under the MIT license.*
